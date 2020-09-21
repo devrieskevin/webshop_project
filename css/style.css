@@ -1,0 +1,116 @@
+body {
+  color: DimGray;
+  background-color: white;
+  width: 800px;
+  margin: auto;
+  text-align: left;
+  font-size: 12px;
+}
+
+/** HEADER STYLE **/
+
+header {
+  text-align: center;
+  min-height: 48px;
+  font-size: 48px;
+}
+
+/** MENU STYLE **/
+
+ul.menu {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+ul.menu > li {
+  background-color: blue;
+  float: left;
+  border: 2px solid black;
+  border-left: none;
+}
+
+ul.menu > li:first-child {
+  border-left: 2px solid black;
+}
+
+ul.menu > li.active {
+  background-color: red;
+}
+
+ul.menu li > a {
+  color: white;
+  text-decoration: none;
+  padding: 16px;
+}
+
+/** FORM STYLE **/
+
+form label {
+  display: inline-block;
+  text-align: right;
+}
+
+form label.contact {
+  width: 40px;
+}
+
+form label.login {
+  width: 70px;
+}
+
+form label.register {
+  width: 110px;
+}
+
+form .text {
+  width: 400px;
+}
+
+/** WEBSHOP AND SHOPPINGCART ITEM STYLE **/
+
+a.webshop_item {
+  color: DimGray;
+  text-decoration: none;
+}
+
+a.webshop_item > div:hover {
+  background-color: lightskyblue;
+}
+
+a.webshop_item > div,
+div.shoppingcart_item {
+  height: 100px;
+}
+  
+a.webshop_item img,
+div.shoppingcart_item > img {
+  float: left;
+  max-width: 200px;
+  max-height: 100%;
+}
+
+/** PRODUCT STYLE **/
+
+div.product > img {
+  max-width: 50%;
+  max-height: 300px;
+}
+
+/** FOOTER STYLE **/
+
+footer.page {
+  background-color: black;
+  /*
+  position: absolute;
+  left: auto;
+  bottom: 0;
+  width: inherit;
+  */
+}
+
+footer.page > p {
+  text-align: right;
+  font-size: 10px;
+  color: white;
+  margin: 1px;
+}
