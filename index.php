@@ -10,9 +10,10 @@ require_once 'crud.php';
 
 $sessionManager = new SessionManager();
 $fileIOManager = new FileIOManager();
-$config = parse_ini_file('config/app.ini', true);
 
+$config = parse_ini_file('config/app.ini', true);
 $crud = new Crud($config['database']);
+
 $pageModel = new PageModel(NULL,$sessionManager,$fileIOManager,$crud);
 $controller = new PageController($pageModel);
 $controller->handleRequest();
